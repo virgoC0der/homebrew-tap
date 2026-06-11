@@ -13,10 +13,10 @@ class ZedClaudeBridge < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/virgoC0der/claude-code-zed/releases/download/v#{version}/zed-claude-bridge-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_ARM64" # filled from the release's checksums.txt
+      sha256 "e955c1927e445f3e33d60e497518dc4e4bf05b1cf0f7ad31ce49420efb092bb7" # filled from the release's checksums.txt
     else
       url "https://github.com/virgoC0der/claude-code-zed/releases/download/v#{version}/zed-claude-bridge-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_X86_64" # filled from the release's checksums.txt
+      sha256 "84db8ec5464319cc290b42399d4120c7e7de42ea51140816c29c5177a1ce4d4f" # filled from the release's checksums.txt
     end
   end
 

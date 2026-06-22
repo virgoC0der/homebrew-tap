@@ -7,16 +7,16 @@
 class ZedClaudeBridge < Formula
   desc "Claude Code /ide integration for Zed (at-mentions, selection awareness, openFile)"
   homepage "https://github.com/virgoC0der/claude-code-zed"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/virgoC0der/claude-code-zed/releases/download/v#{version}/zed-claude-bridge-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "7f1d4afccc7d76e5187d8ec21f99e8029e07e03a590e47ede8f8e8374aedc21a" # filled from the release's checksums.txt
+      sha256 "ef6c120fed30509321bbb5ec6a27e89b2fc1a4dff38c7880a32c59062b472561" # filled from the release's checksums.txt
     else
       url "https://github.com/virgoC0der/claude-code-zed/releases/download/v#{version}/zed-claude-bridge-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "1625e18a8ad2b0282557f6dde2ba6b73db0fa805e0095217e4393d219a505bd2" # filled from the release's checksums.txt
+      sha256 "323ec74a40f0f4472337dca10a911a5e77ef608dfd111edb7c3d2bb2cdffad4d" # filled from the release's checksums.txt
     end
   end
 
